@@ -16,3 +16,15 @@ if (typeof variable === "string"){
 } else {
   console.log("Tipo non supportato");
 };
+
+// Snack 2
+
+type Dipendente = {
+  nome: string,
+  cognome: string,
+  annoDiNascita: number,
+  sesso: "M" | "F",
+  anniDiServizio: number[],
+  readonly emailAziendale: string,
+  contratto: "Indeterminato" | "Determinato" | "Freelance"
+};
