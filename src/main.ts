@@ -28,3 +28,15 @@ type Dipendente = {
   readonly emailAziendale: string,
   contratto: "Indeterminato" | "Determinato" | "Freelance"
 };
+
+type Developer = Dipendente & {
+  livelloEsperienza: "Junior" | "Mid" | "Senior",
+  linguaggi?: string[],
+  certifiazioni: string[]
+}
+
+type ProjectManager = Dipendente & {
+  teamSize: number | null,
+  budgetGestito?: number,
+  stakeholderPrincipali: string[]
+}
